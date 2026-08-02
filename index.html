@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>🔥 Verdad o Reto 🔥</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- FONDO -->
+    <!-- ============================= -->
+
+    <div class="background"></div>
+
+    <!-- ============================= -->
+    <!-- PANTALLA PRINCIPAL -->
+    <!-- ============================= -->
+
+    <section id="pantallaInicio" class="pantalla activa">
+
+        <div class="container">
+
+            <h1>🔥 Verdad o Reto 🔥</h1>
+
+            <p class="subtitle">
+
+                ¿Qué prefieres?
+
+            </p>
+
+            <div class="cards">
+
+                <div class="card verdad">
+
+                    <div class="emoji">
+                        💋
+                    </div>
+
+                    <h2>Verdad</h2>
+
+                </div>
+
+                <div class="card reto">
+
+                    <div class="emoji">
+                        🔥
+                    </div>
+
+                    <h2>Reto</h2>
+
+                </div>
+
+            </div>
+
+            <button id="btnNombres">
+
+                👥 Administrar participantes
+
+            </button>
+
+            <p class="disclaimer">
+
+                La IA hizo las preguntas y los retos.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- PANTALLA VERDAD -->
+    <!-- ============================= -->
+
+    <section id="pantallaVerdad" class="pantalla">
+
+        <div class="contenedorJuego">
+
+            <h1>
+
+                💋 VERDAD
+
+            </h1>
+
+            <div id="cartaPregunta">
+
+                <p id="textoPregunta">
+
+                    Aquí aparecerá la pregunta.
+
+                </p>
+
+            </div>
+
+            <div class="botonesJuego">
+
+                <button id="btnOtraPregunta">
+
+                    🎲 Otra pregunta
+
+                </button>
+
+                <button id="btnReiniciarVerdad">
+
+                    🔄 Reiniciar turno
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ============================= -->
+<!-- PANTALLA RETO -->
+<!-- ============================= -->
+
+<section id="pantallaReto" class="pantalla">
+
+    <div class="contenedorJuego">
+
+        <h1>
+            🔥 RETO
+        </h1>
+
+
+        <div id="cartaReto">
+
+            <p id="textoReto">
+
+                Aquí aparecerá el reto.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="infoReto">
+
+            <div id="selectorPersona">
+
+    <p>
+        Persona elegida:
+    </p>
+
+
+    <h2 id="personaReto">
+
+        -
+
+    </h2>
+
+</div>
+
+
+        </div>
+
+
+
+        <div class="botonesJuego">
+
+
+            <button id="btnElegirPersona">
+
+                🎲 Elegir persona
+
+            </button>
+
+
+
+            <button id="btnAceptarReto">
+
+                ✅ Acepto el reto
+
+            </button>
+
+
+
+            <button id="btnJamás">
+
+                ❌ Jamás
+
+            </button>
+
+
+
+            <button id="btnReiniciarReto">
+
+                🔄 Reiniciar turno
+
+            </button>
+
+            <div id="mensajeAceptado">
+
+    🔥 RETO ACEPTADO 🔥
+
+</div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+    <!-- ============================= -->
+    <!-- MODAL PARTICIPANTES -->
+    <!-- ============================= -->
+
+    <div id="modalNombres" class="modal">
+
+        <div class="modal-content">
+
+            <h2>
+
+                👥 Participantes
+
+            </h2>
+
+            <div class="agregar">
+
+                <input
+                    type="text"
+                    id="inputNombre"
+                    placeholder="Escribe un nombre">
+
+                <button id="agregarNombre">
+
+                    Agregar
+
+                </button>
+
+            </div>
+
+            <div id="listaNombres">
+
+            </div>
+
+            <button id="cerrarModal">
+
+                Cerrar
+
+            </button>
+
+        </div>
+
+    </div>
+
+<!-- ============================= -->
+<!-- POPUP CASTIGO -->
+<!-- ============================= -->
+
+<div id="popupCastigo" class="modal">
+
+    <div class="modal-content castigo">
+
+        <h2>
+            🚨 Shots de Castigo 🚨
+        </h2>
+
+
+        <div id="ruleta">
+
+            🎡
+
+        </div>
+
+
+        <h3 id="resultadoShot">
+
+            Presiona la ruleta
+
+        </h3>
+
+
+        <button id="cerrarCastigo">
+
+            Cerrar
+
+        </button>
+
+
+    </div>
+
+</div>
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+<script src="data/preguntas.js"></script>
+
+<script src="data/retos.js"></script>
+
+<script src="js/participantes.js"></script>
+
+<script src="js/verdad.js"></script>
+
+<script src="js/reto.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
