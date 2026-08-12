@@ -14,7 +14,8 @@ body {
 
     min-height: 100vh;
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     background:
     linear-gradient(
@@ -50,17 +51,19 @@ body {
 
 .pantalla{
 
-    position:absolute;
+    position:relative;
 
-    inset:0;
+    width: 100%;
+    min-height: 100vh;
 
-    display:none;
+    display: none;
 
-    justify-content:center;
+    justify-content: center;
+    align-items: center; 
 
-    align-items:center;
+    padding: 40px 0;
 
-    animation:fade .4s;
+    animation: fade .4s;
 
 }
 
@@ -257,6 +260,8 @@ h1{
 
     color:white;
 
+    margin: auto;
+
 }
 
 #cartaPregunta{
@@ -332,9 +337,13 @@ h1{
 
     justify-content:center;
 
+    align-items: center;
+
     gap:25px;
 
     flex-wrap:wrap;
+
+    padding-bottom: 20px;
 
 }
 
